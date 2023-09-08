@@ -1,12 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - pmoonesi
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - pmoonesi/multicore-processing-fcnn
+  - pmoonesi/whmcs-captcha-solver
+  - pmoonesi/simple-counter-assembly
+  - pmoonesi/os-xv6
+  - pmoonesi/image-classification-mlp
+  - pmoonesi/health-assistant-fes
+  - pmoonesi/evolutionary-snail-jumper
