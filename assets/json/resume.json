@@ -199,7 +199,7 @@
       "startDate":"2022-11-23",
       "endDate": "2023-04-21",
       "name": "Parasite Egg Detection in Animal Faeces",
-      "summary": "After we collected our data from a laboratory which has had annotated their data in LableBox, we utilized different objec detection models (YOLO, Faster RCNN and RetinaNet) for a parasite egg detection task. After comparing our different models, we chose the best one and deployed in on a webserver using an Amazon EC2 instance.",
+      "summary": "After we collected our data from a laboratory that had annotated their data in LableBox, we utilized different object detection models (YOLO, Faster RCNN and RetinaNet) for a parasite egg detection task. After comparing our different models, we chose the best one and deployed it on a web server using an Amazon EC2 instance.",
       "highlights": ["Object Detection in Medicine", "Model Deployment", "Under supervision by Paria Mehrbod"]
     }
   ]
