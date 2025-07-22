@@ -22,8 +22,8 @@ First, I tried to find if there were errors relating this issue, since I did not
 the response was always from Obsidian and nothing from Zotero, so I gave up on Zotero errors:
 
 ```bash
-Jul 21 12:46:05 parham-laptop obsidian_obsidian.desktop[8139]: Opening URL: zotero://open-pdf/library/items/8DNCPSUA?page=9&annotation=PEYX9TKS
-Jul 21 12:46:05 parham-laptop obsidian_obsidian.desktop[57602]: gio: zotero://open-pdf/library/items/8DNCPSUA?page=9&annotation=PEYX9TKS: The specified location is not supported
+Jul 21 12:46:05 your-host obsidian_obsidian.desktop[8139]: Opening URL: zotero://open-pdf/library/items/8DNCPSUA?page=9&annotation=PEYX9TKS
+Jul 21 12:46:05 your-host obsidian_obsidian.desktop[57602]: gio: zotero://open-pdf/library/items/8DNCPSUA?page=9&annotation=PEYX9TKS: The specified location is not supported
 ```
 
 you can recognize the error:
@@ -50,7 +50,7 @@ To make sure it is not the first reason, I had to register a handler for Zotero 
 [Desktop Entry]
 Name=Zotero
 Exec=bash -c "$(dirname $(realpath $(echo %k | sed -e 's/^file:\\/\\///')))/zotero -url %U"
-Icon=/home/parham/Programs/Zotero_linux-x86_64/icons/icon128.png
+Icon=/path/to/Zotero_linux-x86_64/icons/icon128.png
 Type=Application
 Terminal=false
 Categories=Office;
@@ -66,7 +66,7 @@ which as you can see, completely accounts for `zotero://` by mentioning x-scheme
 ~ cat <<EOF > zotero-uri-handler.desktop
 [Desktop Entry]
 Name=Zotero URI Handler
-Exec=/home/parham/Programs/Zotero_linux-x86_64/zotero -uri %u
+Exec=/path/to/Zotero_linux-x86_64/zotero -uri %u
 Type=Application
 NoDisplay=true
 MimeType=x-scheme-handler/zotero;
